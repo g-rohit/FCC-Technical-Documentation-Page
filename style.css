@@ -11,12 +11,18 @@ a {
  left: 0;
  border-right: solid 3px #b2b2b2;
 }
+
+aside {
+    height: 100%;
+}
 ul.menuItems {
     margin: 0;
     padding: 0;
-    height: 600px;
+    height: 90%;
+    position: absolute;
     overflow-y: scroll;
     width: 100%;
+top: 0;
 
 }
 
@@ -65,3 +71,9 @@ ul.menuItems > a > li {
      background: #333333;
      color: #ffffff;
  }
+
+
+ .blockquote {
+    margin-bottom: 0 !important;
+    font-size: 1rem !important;
+}
