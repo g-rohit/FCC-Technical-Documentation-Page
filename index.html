@@ -1,0 +1,210 @@
+<!-- Developed by
+ ██████╗     ██████╗  ██████╗ ██╗  ██╗██╗████████╗
+██╔════╝     ██╔══██╗██╔═══██╗██║  ██║██║╚══██╔══╝
+██║  ███╗    ██████╔╝██║   ██║███████║██║   ██║   
+██║   ██║    ██╔══██╗██║   ██║██╔══██║██║   ██║   
+╚██████╔╝    ██║  ██║╚██████╔╝██║  ██║██║   ██║   
+ ╚═════╝     ╚═╝  ╚═╝ ╚═════╝ ╚═╝  ╚═╝╚═╝   ╚═╝   
+                                                  
+ https://www.linkedin.com/in/grohit19
+-->
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- https://www.tutorialspoint.com/http/index.htm -->
+    <!-- Bootstrap CSS -->
+    <!-- custom CSS -->
+    <link rel="stylesheet" href="style.css">
+     
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3 sidebar m-0 p-0">
+                <h3 class="p-2 text-center text-danger" >HTTP Documentation</h3>
+                <aside class="navbar p-0" id="navbar">
+                    <!-- d-lg-none d-md-none d-sm-block d-xs-block 
+                        <button class="btn btn-dark  fixed" data-toggle="collapse" data-target="#showMenuItems">Menu Items</button> -->
+                    <!-- <ul id="showMenuItems" class="collapse"> -->
+                        
+                        <ul class="menuItems">
+                        <a href="#home"><li>HTTP Home</li></a>
+                        <a href="#overview"><li>HTTP - Overview</li></a>
+                        <a href="#parameters"><li>HTTP - Parameters</li></a>
+                        <a href="#messages"><li>HTTP - Messages</li></a>
+                        <a href="#requests"><li>HTTP - Requests</li></a>
+                        <a href="#responses"><li>HTTP - Responses</li></a>
+                        <a href="#methods"><li>HTTP - Methods</li></a>
+                        <a href="#statusCodes"><li>HTTP - Status Codes</li></a>
+                        <a href="#headerFields"><li>HTTP - Header Fields</li></a>
+                        <a href="#caching"><li>HTTP - Caching</li></a>
+                        <a href="#URLEncoding"><li>HTTP - URL Encoding</li></a>
+                        <a href="#security"><li>HTTP - Security</li></a>
+                        <a href="#messageExamples"><li>HTTP - Message Examples</li></a>
+                        <a href="#quickGuide"><li>HTTP - Quick Guide</li></a>
+                        <a href="#usefulResources"><li>HTTP - Useful Resources</li></a>
+                    </ul>
+                </aside>
+            </div>
+            <div class="col-xs-12 col-sm-12 col-md-9 col-lg-9 ml-auto pr-4">
+                <main id="main-doc">
+
+                    <section class="main-section" id="home">
+                        <header>
+                            <h1 class="mt-3 text-info">Welcome to HTTP Tutorial</h1>
+                        </header>
+                        <h6>The Hypertext Transfer Protocol (HTTP) is an application-level protocol for distributed,
+                            collaborative, hypermedia information systems. This is the foundation for data communication
+                            for the World Wide Web (i.e. internet) since 1990. HTTP is a generic and stateless protocol
+                            which can be used for other purposes as well using extensions of its request methods, error
+                            codes, and headers.
+                            <br>
+                            This tutorial is based on RFC-2616 specification, which defines the protocol referred to as
+                            HTTP/1.1. HTTP/1.1 is a revision of the original HTTP (HTTP/1.0). A major difference between
+                            HTTP/1.0 and HTTP/1.1 is that HTTP/1.0 uses a new connection for each request/response
+                            exchange, where as HTTP/1.1 connection may be used for one or more request/response
+                            exchanges.</h6>
+
+                    </section>
+                    <section class="main-section" id="overview">
+                        <header>
+                            <h1 class="mt-3 text-info">Overview</h1>
+                        </header>
+                        <p>The Hypertext Transfer Protocol (HTTP) is an application-level protocol for distributed,
+                            collaborative, hypermedia information systems. This is the foundation for data communication
+                            for the World Wide Web (i.e. internet) since 1990. HTTP is a generic and stateless protocol
+                            which can be used for other purposes as well using extensions of its request methods, error
+                            codes, and headers.
+                            <br><br>
+                            Basically, HTTP is a TCP/IP based communication protocol, that is used to deliver data (HTML
+                            files, image files, query results, etc.) on the World Wide Web. The default port is TCP 80,
+                            but other ports can be used as well. It provides a standardized way for computers to
+                            communicate with each other. HTTP specification specifies how clients' request data will be
+                            constructed and sent to the server, and how the servers respond to these requests.</p>
+                        <h4>Basic Features</h4>
+                        <p>There are three basic features that make HTTP a simple but powerful protocol:</p>
+                        <ul>
+                            <li>
+                                <p><strong>HTTP is connectionless: </strong> The HTTP client, i.e., a browser initiates
+                                    an HTTP request and after a request is made, the client waits for the response. The
+                                    server processes the request and sends a response back after which client disconnect
+                                    the connection. So client and server knows about each other during current request
+                                    and response only. Further requests are made on new connection like client and
+                                    server are new to each other.</p>
+                            </li>
+                            <li>
+                                <p><strong>HTTP is media independent:</strong> It means, any type of data can be sent by
+                                    HTTP as long as both the client and the server know how to handle the data content.
+                                    It is required for the client as well as the server to specify the content type
+                                    using appropriate MIME-type.</p>
+                            </li>
+                            <li>
+                                <p><strong>HTTP is stateless: </strong> As mentioned above, HTTP is connectionless and
+                                    it is a direct result of HTTP being a stateless protocol. The server and client are
+                                    aware of each other only during a current request. Afterwards, both of them forget
+                                    about each other. Due to this nature of the protocol, neither the client nor the
+                                    browser can retain information between different requests across the web pages.</p>
+                            </li>
+                        </ul>
+                        <div class="card bg-grey">
+                            <div class="card-body">
+                                <blockquote class="blockquote">
+                                    <p>HTTP/1.0 uses a new connection for each request/response exchange, where as
+                                        HTTP/1.1 connection may be used for one or more request/response exchanges.</p></blockquote>
+                            </div>
+                        </div> <br> 
+                        <h4>Basic Architecture</h4>
+                        <p>The following diagram shows a very basic architecture of a web application and depicts where HTTP sits:</p>
+                        <div class="text-center"><img src="https://www.tutorialspoint.com/http/images/cgiarch.gif" class="img-fluid ml-auto" alt=""></div>
+                        <code></code>
+                    </section>
+                    <section class="main-section" id="parameters">
+                        <header></header>
+                        <p></p>
+                        <code></code>
+                    </section>
+                    <section class="main-section" id="messages">
+                        <header></header>
+                        <p></p>
+                        <code></code>
+                    </section>
+                    <section class="main-section" id="requests">
+                        <header></header>
+                        <p></p>
+                        <code></code>
+                    </section>
+                    <section class="main-section" id="responses">
+                        <header></header>
+                        <p></p>
+                        <code></code>
+                    </section>
+                    <section class="main-section" id="methods">
+                        <header></header>
+                        <p></p>
+                        <code></code>
+                    </section>
+                    <section class="main-section" id="statusCodes">
+                        <header></header>
+                        <p></p>
+                        <code></code>
+                    </section>
+                    <section class="main-section" id="headerFields">
+                        <header></header>
+                        <p></p>
+                        <code></code>
+                    </section>
+                    <section class="main-section" id="caching">
+                        <header></header>
+                        <p></p>
+                        <code></code>
+                    </section>
+                    <section class="main-section" id="URLEncoding">
+                        <header></header>
+                        <p></p>
+                        <code></code>
+                    </section>
+                    <section class="main-section" id="security">
+                        <header></header>
+                        <p></p>
+                        <code></code>
+                    </section>
+                    <section class="main-section" id="quickGuide">
+                        <header></header>
+                        <p></p>
+                        <code></code>
+                    </section>
+                    <section class="main-section" id="usefulResources">
+                        <header></header>
+                        <p></p>
+                        <code></code>
+                    </section>
+                </main>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
