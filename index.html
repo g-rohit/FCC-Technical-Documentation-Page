@@ -21,77 +21,79 @@
     <!-- Bootstrap CSS -->
     <!-- custom CSS -->
     <link rel="stylesheet" href="style.css">
-
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
+        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="main.js"></script>
 
 </head>
 
 <body>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
     <div class="container-fluid">
         <div class="row">
             <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3 sidebar m-0 p-0">
                 <h3 class="p-2 text-center text-danger">HTTP Documentation</h3>
-                <aside class="navbar p-0" id="navbar">
+                <nav class="navbar p-0" id="navbar">
                     <!-- d-lg-none d-md-none d-sm-block d-xs-block 
                         <button class="btn btn-dark  fixed" data-toggle="collapse" data-target="#showMenuItems">Menu Items</button> -->
                     <!-- <ul id="showMenuItems" class="collapse"> -->
-
+                    <header></header>
                     <ul class="menuItems">
-                        <a href="#home">
+                        <a href="#HTTP_Home" class="nav-link">
                             <li>HTTP Home</li>
                         </a>
-                        <a href="#overview">
+                        <a href="#HTTP_-_Overview" class="nav-link">
                             <li>HTTP - Overview</li>
                         </a>
-                        <a href="#parameters">
+                        <a href="#HTTP_-_Parameters" class="nav-link">
                             <li>HTTP - Parameters</li>
                         </a>
-                        <a href="#messages">
+                        <a href="#HTTP_-_Messages" class="nav-link">
                             <li>HTTP - Messages</li>
                         </a>
-                        <a href="#requests">
+                        <a href="#HTTP_-_Requests" class="nav-link">
                             <li>HTTP - Requests</li>
                         </a>
-                        <a href="#responses">
+                        <!-- <a href="#HTTP_-_Responses" class="nav-link">
                             <li>HTTP - Responses</li>
                         </a>
-                        <a href="#methods">
+                        <a href="#HTTP_-_Methods" class="nav-link">
                             <li>HTTP - Methods</li>
                         </a>
-                        <a href="#statusCodes">
+                        <a href="#HTTP_-_Status_Codes" class="nav-link">
                             <li>HTTP - Status Codes</li>
                         </a>
-                        <a href="#headerFields">
+                        <a href="#HTTP_-_Header_Fields" class="nav-link">
                             <li>HTTP - Header Fields</li>
                         </a>
-                        <a href="#caching">
+                        <a href="#caching" class="nav-link">
                             <li>HTTP - Caching</li>
                         </a>
-                        <a href="#URLEncoding">
+                        <a href="#HTTP_-_URL_Encoding" class="nav-link">
                             <li>HTTP - URL Encoding</li>
                         </a>
-                        <a href="#security">
+                        <a href="#HTTP_-_Security" class="nav-link">
                             <li>HTTP - Security</li>
                         </a>
-                        <a href="#messageExamples">
+                        <a href="#HTTP_-_Message_Examples" class="nav-link">
                             <li>HTTP - Message Examples</li>
                         </a>
-                        <a href="#quickGuide">
+                        <a href="#HTTP_-_Quick_Guide" class="nav-link">
                             <li>HTTP - Quick Guide</li>
                         </a>
-                        <a href="#usefulResources">
+                        <a href="#HTTP_-_Useful_Resources" class="nav-link">
                             <li>HTTP - Useful Resources</li>
-                        </a>
+                        </a> -->
                     </ul>
-                </aside>
+                </nav>
             </div>
             <div class="col-xs-12 col-sm-12 col-md-9 col-lg-9 ml-auto pr-4">
                 <main id="main-doc">
-
-                    <section class="main-section" id="home">
-                        <header>
-                            <h1 class="mt-3 text-info">Welcome to HTTP Tutorial</h1>
+                    <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+                    <section class="main-section" id="HTTP_Home">
+                        <header class="mt-3 text-info">HTTP Home
                         </header>
                         <p>The Hypertext Transfer Protocol (HTTP) is an application-level protocol for distributed,
                             collaborative, hypermedia information systems. This is the foundation for data communication
@@ -112,13 +114,18 @@
                         </p>
                         <h3>Prerequisites</h3>
                         <p>
-                            Before proceeding with this tutorial, it is good to have a basic understanding of web concepts, web browsers, web servers, client and server architecture based software.
+                            Before proceeding with this tutorial, it is good to have a basic understanding of web
+                            concepts, web browsers, web servers, client and server architecture based software.
                         </p>
 
+                        <div class="text-center pad-top-10">
+                            <a href="#overview" class=""><i class="fa fa-arrow-down" aria-hidden="true"></i> Get
+                                started</a>
+                        </div>
+
                     </section>
-                    <section class="main-section" id="overview">
-                        <header>
-                            <h1 class="mt-3 text-info">Overview</h1>
+                    <section class="main-section" id="HTTP_-_Overview">
+                        <header class="mt-3 text-info">HTTP - Overview</h1>
                         </header>
                         <p>The Hypertext Transfer Protocol (HTTP) is an application-level protocol for distributed,
                             collaborative, hypermedia information systems. This is the foundation for data communication
@@ -160,7 +167,8 @@
                             <div class="card-body">
                                 <blockquote class="blockquote">
                                     HTTP/1.0 uses a new connection for each request/response exchange, where as
-                                        HTTP/1.1 connection may be used for one or more request/response exchanges.</blockquote>
+                                    HTTP/1.1 connection may be used for one or more request/response exchanges.
+                                </blockquote>
                             </div>
                         </div> <br>
                         <h4>Basic Architecture</h4>
@@ -168,97 +176,267 @@
                             HTTP sits:</p>
                         <div class="text-center"><img src="https://www.tutorialspoint.com/http/images/cgiarch.gif"
                                 class="img-fluid ml-auto" alt=""></div>
-                     <p>The HTTP protocol is a request/response protocol based on the client/server based architecture
-                         where web browsers, robots and search engines, etc. act like HTTP clients, and the Web server
-                         acts as a server.</p>
+                        <p>The HTTP protocol is a request/response protocol based on the client/server based
+                            architecture
+                            where web browsers, robots and search engines, etc. act like HTTP clients, and the Web
+                            server
+                            acts as a server.</p>
 
-                     <h4>Client</h4>
-                     <p>The HTTP client sends a request to the server in the form of a request method, URI, and protocol
-                         version, followed by a MIME-like message containing request modifiers, client information, and
-                         possible body content over a TCP/IP connection.</p>
+                        <h4>Client</h4>
+                        <p>The HTTP client sends a request to the server in the form of a request method, URI, and
+                            protocol
+                            version, followed by a MIME-like message containing request modifiers, client information,
+                            and
+                            possible body content over a TCP/IP connection.</p>
 
-                     <h4>Server</h4>
-                     <p>The HTTP server responds with a status line, including the message's protocol version and a
-                         success or error code, followed by a MIME-like message containing server information, entity
-                         meta information, and possible entity-body content.</p>
+                        <h4>Server</h4>
+                        <p>The HTTP server responds with a status line, including the message's protocol version and a
+                            success or error code, followed by a MIME-like message containing server information, entity
+                            meta information, and possible entity-body content.</p>
 
                     </section>
-                    <section class="main-section" id="parameters">
-                        <header>        <h1 class="mt-3 text-info">HTTP Parameters</h1></header>
-                        <p>This chapter is going to list down few of the important HTTP Protocol Parameters and their syntax the way they are used in the communication. For example, format for date, format of URL, etc. This will help you in constructing your request and response messages while writing HTTP client or server programs. You will see the complete usage of these parameters in subsequent chapters while learning the message structure for HTTP requests and responses.</p>
-                        <h4>HTTP Version</h4><p>
-                            HTTP uses a <strong>&lt;major&gt;.&lt;minor&gt;</strong>  numbering scheme to indicate versions of the protocol. The version of an HTTP message is indicated by an HTTP-Version field in the first line. Here is the general syntax of specifying HTTP version number:
+                    <section class="main-section" id="HTTP_-_Parameters">
+                        <header class="mt-3 text-info">HTTP - Parameters</header>
+                        <p>This chapter is going to list down few of the important HTTP Protocol Parameters and their
+                            syntax the way they are used in the communication. For example, format for date, format of
+                            URL, etc. This will help you in constructing your request and response messages while
+                            writing HTTP client or server programs. You will see the complete usage of these parameters
+                            in subsequent chapters while learning the message structure for HTTP requests and responses.
+                        </p>
+                        <h4>HTTP Version</h4>
+                        <p>
+                            HTTP uses a <strong>&lt;major&gt;.&lt;minor&gt;</strong> numbering scheme to indicate
+                            versions of the protocol. The version of an HTTP message is indicated by an HTTP-Version
+                            field in the first line. Here is the general syntax of specifying HTTP version number:
                         </p>
                         <code>HTTP-Version   = "HTTP" "/" 1*DIGIT "." 1*DIGIT</code> <br> <br>
-                            <strong>Example</strong>
+                        <strong>Example</strong>
                         </p>
                         <code>
-                            HTTP/1.0 <br>
-
-or <br>
-
-HTTP/1.1
-                        </code> <br><br>
+                                                HTTP/1.0 <br>
+                    
+                    or <br>
+                    
+                    HTTP/1.1
+                                            </code> <br><br>
                         <h4>Uniform Resource Identifiers</h4>
-<p>Uniform Resource Identifiers (URI) are simply formatted, case-insensitive string containing name, location, etc. to identify a resource, for example, a website, a web service, etc. A general syntax of URI used for HTTP is as follows:</p>  
-<code>
-    URI = "http:" "//" host [ ":" port ] [ abs_path [ "?" query ]]
-</code>  <br> <br>
-   <p> Here if the port is empty or not given, <strong>port</strong> 80 is assumed for HTTP and an empty <strong>abs_path</strong> is equivalent to an <strong>abs_path</strong> of "/". The characters other than those in the <strong>reserved</strong> and <strong>unsafe</strong> sets are equivalent to their ""%" HEX HEX" encoding.</p>
-   <strong>Example</strong>
+                        <p>Uniform Resource Identifiers (URI) are simply formatted, case-insensitive string containing
+                            name, location, etc. to identify a resource, for example, a website, a web service, etc. A
+                            general syntax of URI used for HTTP is as follows:</p>
+                        <code>
+                        URI = "http:" "//" host [ ":" port ] [ abs_path [ "?" query ]]
+                    </code> <br> <br>
+                        <p> Here if the port is empty or not given, <strong>port</strong> 80 is assumed for HTTP and an
+                            empty <strong>abs_path</strong> is equivalent to an <strong>abs_path</strong> of "/". The
+                            characters other than those in the <strong>reserved</strong> and <strong>unsafe</strong>
+                            sets are equivalent to their ""%" HEX HEX" encoding.</p>
+                        <strong>Example</strong>
 
-<div class="card bg-grey">
-    <div class="card-body">
-        <blockquote class="blockquote">
-<code class="text-dark">
-    http://abc.com:80/~smith/home.html <br>
-    http://ABC.com/%7Esmith/home.html <br>
-    http://ABC.com:/%7esmith/home.html <br>
-</code> </blockquote></div></div>
-<br>
-<h4>Date/Time Formats</h4> <p>All HTTP date/time stamps MUST be represented in Greenwich Mean Time (GMT), without exception. HTTP applications are allowed to use any of the following three representations of date/time stamps:</p>
-<div class="card bg-grey">
-    <div class="card-body">
-        <blockquote class="blockquote">
-<code class="text-dark">
-    Sun, 06 Nov 1994 08:49:37 GMT  ; RFC 822, updated by RFC 1123 <br>
-    Sunday, 06-Nov-94 08:49:37 GMT ; RFC 850, obsoleted by RFC 1036 <br>
-    Sun Nov  6 08:49:37 1994       ; ANSI C's asctime() format <br>
+                        <div class="card bg-grey">
+                            <div class="card-body">
+                                <blockquote class="blockquote">
+                                    <code class="text-dark">
+                        http://abc.com:80/~smith/home.html <br>
+                        http://ABC.com/%7Esmith/home.html <br>
+                        http://ABC.com:/%7esmith/home.html <br>
+                    </code> </blockquote>
+                            </div>
+                        </div>
+                        <br>
+                        <h4>Date/Time Formats</h4>
+                        <p>All HTTP date/time stamps MUST be represented in Greenwich Mean Time (GMT), without
+                            exception. HTTP applications are allowed to use any of the following three representations
+                            of date/time stamps:</p>
+                        <div class="card bg-grey">
+                            <div class="card-body">
+                                <blockquote class="blockquote">
+                                    <li class="text-dark">
+                                        Sun, 06 Nov 1994 08:49:37 GMT ; RFC 822, updated by RFC 1123 <br>
+                                        Sunday, 06-Nov-94 08:49:37 GMT ; RFC 850, obsoleted by RFC 1036 <br>
+                                        Sun Nov 6 08:49:37 1994 ; ANSI C's asctime() format <br>
 
+                                    </li>
+                                </blockquote>
+                            </div>
+                        </div> <br>
+                        <h4>Character Sets</h4>
+                        <p>We use character sets to specify the character sets that the client prefers. Multiple
+                            character sets can be listed separated by commas. If a value is not specified, the default
+                            is the US-ASCII.</p>
+
+                        <strong>Example</strong>
+                        <p>Following are the valid character sets:</p>
+                        <div class="card bg-grey">
+                            <div class="card-body">
+                                <blockquote class="blockquote">
+                                    <code class="text-dark">
+                                                US-ASCII <br>
+                                                
+                                                or <br>
+                                                
+                                                ISO-8859-1 <br>
+                                                
+                                                or <br>
+                                                
+                                                ISO-8859-7 <br>
+                                                </code> </blockquote>
+                            </div>
+                        </div>
+                        <br>
+                        <h4>Content Encodings</h4>
+                        <p>A content encoding value indicates that an encoding algorithm has been used to encode the
+                            content before passing it over the network. Content coding are primarily used to allow a
+                            document to be compressed or otherwise usefully transformed without losing the identity.
+
+                            All content-coding values are case-insensitive. HTTP/1.1 uses content-coding values in the
+                            Accept-Encoding and Content-Encoding header fields which we will see in the subsequent
+                            chapters.</p>
+                        <code>
+                                                        media-type     = type "/" subtype *( ";" parameter )
+                                                    </code> <br>
+                        <p>The type, subtype, and parameter attribute names are case--insensitive.
+                        </p>
+
+                        <h6>Example</h6>
+                        <code>Accept: image/gif</code>
+
+                        <h4>Language Tags</h4>
+                        <p> HTTP uses language tags within the Accept-Language and Content-Language fields. A language
+                            tag is composed of one or
+                            more parts: a primary language tag and a possibly empty series of subtags:</p>
+
+                        <code>                        language-tag  = primary-tag *( "-" subtag )</code><br><br>
+                        <p> White spaces are not allowed within the tag and all tags are case- insensitive.</p>
+
+                        <h6>Example</h6>
+                        <p> Example tags include:</p>
+
+                        <code>                        en, en-US, en-cockney, i-cherokee, x-pig-latin</code><br><br>
+                        <p> where any two-letter primary-tag is an ISO-639 language abbreviation and any two-letter
+                            initial subtag is an
+                            ISO-3166 country code.</p>
+
+
+                    </section>
+
+
+                    <section class="main-section" id="HTTP_-_Messages">
+
+                        <header class="mt-3 text-info">HTTP - Messages
+                        </header>
+                        <l>
+                            HTTP is based on the client-server architecture model and a stateless request/response
+                            protocol that operates by exchanging messages across a reliable TCP/IP connection.
+
+                            An HTTP "client" is a program (Web browser or any other client) that establishes a
+                            connection to a server for the purpose of sending one or more HTTP request messages. An HTTP
+                            "server" is a program ( generally a web server like Apache Web Server or Internet
+                            Information Services IIS, etc. ) that accepts connections in order to serve HTTP requests by
+                            sending HTTP response messages.
+
+                            HTTP makes use of the Uniform Resource Identifier (URI) to identify a given resource and to
+                            establish a connection. Once the connection is established, HTTP messages are passed in a
+                            format similar to that used by the Internet mail [RFC5322] and the Multipurpose Internet
+                            Mail Extensions (MIME) [RFC2045]. These messages include requests from client to server and
+                            responses from server to client which will have the following format:
+                            <br><br>
+                            <code>                                 HTTP-message   = <Request> | <Response> ; HTTP/1.1 messages</code>
+                            <br><br>
+                            HTTP requests and HTTP responses use a generic message format of RFC 822 for transferring
+                            the required data. This generic message format consists of the following four items.
+
+                            <ul>
+
+                                <li>
+                                    A Start-line</li>
+
+                                <li> Zero or more header fields followed by CRLF</li>
+                                <li>
+
+                                    An empty line (i.e., a line with nothing preceding the CRLF)
+                                    indicating the end of the header fields
+
+                                </li>
+                                <li> Optionally a message-body</li>
+
+                            </ul>
+                            <br>
+                            In the following sections, we will explain each of the entities used in an HTTP message.
+
+                            <h4> Message Start-Line</h4>
+                            A start-line will have the following generic syntax:
+
+                            <code>                               start-line = Request-Line | Status-Line</code>
+                            We will discuss Request-Line and Status-Line while discussing HTTP Request and HTTP Response
+                            messages respectively. For now, let's see the examples of start line in case of request and
+                            response:
+
+                            <code>
+                                   GET /hello.htm HTTP/1.1     (This is Request-Line sent by the client)
+                                   <br>
+                                   HTTP/1.1 200 OK             (This is Status-Line sent by the server)
 </code>
-</blockquote></div></div> <br>
-<h4>Character Sets</h4>
-<p>We use character sets to specify the character sets that the client prefers. Multiple character sets can be listed separated by commas. If a value is not specified, the default is the US-ASCII.</p>
+                            <h4>Header Fields</h4>
+                            HTTP header fields provide required information about the request or response, or about the
+                            object sent in the message body. There are four types of HTTP message headers:
 
-<strong>Example</strong>
-<p>Following are the valid character sets:</p>
-<div class="card bg-grey">
-    <div class="card-body">
-        <blockquote class="blockquote">
-<code class="text-dark">
-    US-ASCII <br>
+                            <ul>
+                                <li>
+                                    General-header: These header fields have general applicability for both request and
+                                    response
+                                    messages.
+                                </li>
 
-    or <br>
-    
-    ISO-8859-1 <br>
-    
-    or  <br>
-    
-    ISO-8859-7 <br>
-</code> </blockquote></div></div>
-<br>
+                                <li>Request-header: These header fields have applicability only for request messages.
+                                </li>
+
+                                <li>Response-header: These header fields have applicability only for response messages.
+                                </li>
+
+                                <li>
+                                    Entity-header: These header fields define meta information about the entity-body or,
+                                    if no
+                                    body is present, about the resource identified by the request.
+                                </li>
+
+                            </ul>
+
+
+                            </p>
+                            <code></code>
                     </section>
-                    <section class="main-section" id="messages">
-                        <header></header>
-                        <p></p>
-                        <code></code>
+
+                    <section class="main-section" id="HTTP_-_Requests">
+                        <header class="mt-3 text-info"> HTTP - Requests</header>
+                        <h>An HTTP client sends an HTTP request to a server in the form of a request message which
+                            includes following format:
+
+                            <ul>
+                                <li>A Request-line</li>
+                                <li>Zero or more header (General|Request|Entity) fields followed by CRLF</li>
+                                <li>An empty line (i.e., a line with nothing preceding the CRLF)
+                                    indicating the end of the header fields</li>
+                                <li>Optionally a message-body</li>
+
+                                The following sections explain each of the entities used in an HTTP request message.
+
+
+                            </ul>
+                            <h4>Request-Line</h4>
+                            <p>The Request-Line begins with a method token, followed by the Request-URI and the protocol
+                                version, and ending with CRLF. The elements are separated by space SP characters.</p>
+
+                            <code>Request-Line = Method SP Request-URI SP HTTP-Version CRLF</code>
+                            </p>
+                            <code>
+
+
+                        </code>
                     </section>
-                    <section class="main-section" id="requests">
-                        <header></header>
-                        <p></p>
-                        <code></code>
-                    </section>
-                    <section class="main-section" id="responses">
+
+                    <h4>Reference</h4>
+                    <p>All the documentation in this page is taken from <a href="https://www.tutorialspoint.com/http">Here</a></p>
+                    <!--   <section class="main-section" id="responses">
                         <header></header>
                         <p></p>
                         <code></code>
@@ -302,7 +480,7 @@ HTTP/1.1
                         <header></header>
                         <p></p>
                         <code></code>
-                    </section>
+                    </section> -->
                 </main>
             </div>
         </div>
@@ -311,16 +489,19 @@ HTTP/1.1
 
 
     <!-- Optional JavaScript -->
+    <script>
+
+    </script>
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
-    </script>
+        </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
         integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
-    </script>
+        </script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
-    </script>
+        </script>
 </body>
 
 </html>
